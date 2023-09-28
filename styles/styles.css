@@ -189,6 +189,10 @@ ul li a:hover {
     margin-bottom: 1rem;
 }
 
+.profile_job {
+    color: var(--text-light);
+}
+
 .profile_description {
     line-height: 1.5rem;
     color: var(--text-dark);
@@ -203,6 +207,169 @@ ul li a:hover {
 .profile_image img {
     width: min(25rem, 90%);
     border-radius: 100%;
+}
+
+/*===============================HOMETOWN===============================*/
+
+.hometown {
+    background-color: #892ce7;
+}
+
+.hometown__container{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.hometown_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hometown_subtitle {
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.hometown_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--extra-light);
+    margin-bottom: 1rem;
+}
+
+.hometown_title span{
+    color: var(--secondary-color);
+}
+
+.hometown_description {
+    line-height: 1.5rem;
+    color: var(--extra-light);
+    margin-bottom: 2rem;
+}
+
+.hometown_image {
+    display: grid;
+    place-items: center;
+}
+
+.hometown_image img {
+    width: min(25rem, 100%);
+    border-radius:20%;
+}
+
+/*===============================FOOD===============================*/
+
+.food {
+    background-color: var(--extra-light);
+}
+
+.food__container{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.food_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.food_subtitle {
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.food_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.food_description {
+    line-height: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.food_image {
+    display: grid;
+    place-items: center;
+}
+
+.food_image img {
+    width: min(25rem, 90%);
+    border-radius: 100%;
+}
+
+/*===============================TOURIST===============================*/
+
+.tourist {
+    background-color: #892ce7;
+}
+
+.tourist__container{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.tourist_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tourist_subtitle {
+    letter-spacing: 2px;
+    color: var(--extra-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.tourist_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.tourist_description {
+    line-height: 1.5rem;
+    color: var(--extra-light);
+    margin-bottom: 2rem;
+}
+
+.tourist_image {
+    display: grid;
+    place-items: center;
+}
+
+.tourist_image img {
+    width: min(25rem, 100%);
+    border-radius:20%;
 }
 
 @media (width < 750px){
@@ -248,6 +415,36 @@ ul li a:hover {
     }
 
     .profile_image {
+        grid-area: 1/1/2/2;
+    }
+
+    .hometown__container{
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hometown_image {
+        grid-area: 1/1/2/2;
+    }
+
+    .food__container{
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .food_image {
+        grid-area: 1/1/2/2;
+    }
+
+    .tourist__container{
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tourist_image {
         grid-area: 1/1/2/2;
     }
 }
